@@ -93,7 +93,7 @@ module "windows_vms" {
   }
    
    windows_dns_labels = {
-    "n01698490-w-vm1" = "n01697923-w-vm1"
+    "n01697923-w-vm1" = "n01697923-w-vm1"
   }
 }
 
