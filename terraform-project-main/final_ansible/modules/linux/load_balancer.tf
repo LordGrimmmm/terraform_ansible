@@ -1,14 +1,14 @@
 resource "azurerm_public_ip" "lb_pip" {
-  name                = "n01698490-lb-pip"
+  name                = "n01697923-lb-pip"
   location            = var.location
   resource_group_name = var.resource_group_name
   allocation_method   = "Static"
   sku                 = "Standard"
-  domain_name_label   = "n01698490-lb"
+  domain_name_label   = "n01697923-lb"
 }
 
 resource "azurerm_lb" "linux_lb" {
-  name                = "n01698490-lb"
+  name                = "n01697923-lb"
   location            = var.location
   resource_group_name = var.resource_group_name
   sku                 = "Standard"

@@ -4,7 +4,7 @@ resource "azurerm_public_ip" "linux_pip" {
   resource_group_name = var.resource_group_name
   location            = var.location
   allocation_method   = "Static"
-  domain_name_label   = "n01698490-c-vm${count.index + 1}"
+  domain_name_label   = "n01697923-c-vm${count.index + 1}"
 }
 
 resource "azurerm_network_interface" "linux_nic" {
@@ -67,7 +67,7 @@ resource "azurerm_linux_virtual_machine" "linux_vm" {
 
   admin_ssh_key {
     username   = "azureuser"
-    public_key = file("/home/n01698490/john/my_rsa_key.pub")
+    public_key = file("/home/n01697923/.ssh/id_rsa.pub")
   }
 
   os_disk {

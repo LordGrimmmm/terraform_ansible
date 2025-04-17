@@ -1,0 +1,1 @@
+{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"linux_vms","Source":"./modules/linux","Dir":"modules/linux"},{"Key":"network","Source":"./modules/network","Dir":"modules/network"},{"Key":"resource_group","Source":"./modules/resource_group","Dir":"modules/resource_group"},{"Key":"windows_vms","Source":"./modules/windows","Dir":"modules/windows"}]}

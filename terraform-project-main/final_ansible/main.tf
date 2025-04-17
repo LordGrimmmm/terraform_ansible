@@ -1,7 +1,7 @@
 locals {
   common_tags = {
     Project        = "CCGC 5502 Automation Project"
-    Name           = "johnson.joseph"
+    Name           = "nachiket.rathore"
     ExpirationDate = "2025-04-14"
     Environment    = "Project"
   }
@@ -41,11 +41,11 @@ module "linux_vms" {
   resource_group_name = module.resource_group.rg_linux_name
   location            = module.resource_group.location
   nb_count            = 2
-  linux_name          = "n01698490-c-vm"
+  linux_name          = "n01697923-c-vm"
   subnet_id           = module.network.subnet1_id
   admin_username      = "azureuser"
-  public_key          = "/home/n01698490/john/my_rsa_key.pub"
-  private_key         = "/home/n01698490/john/my_rsa_key"
+  public_key          = "/home/n01697923/.ssh/id_rsa.pub"
+  private_key         = "/home/n01697923/.ssh/id_rsa"
   tags                = local.common_tags
   
   linux_avs = "linux-avs"
@@ -70,7 +70,7 @@ module "windows_vms" {
   location            = module.resource_group.location
   subnet_id           = module.network.subnet2_id
   admin_username      = "azureadmin"  
-  admin_password      = "Johnson@12345" 
+  admin_password      = "Nachiket@12345" 
   tags                = local.common_tags 
 
   windows_vms = {
@@ -93,7 +93,7 @@ module "windows_vms" {
   }
    
    windows_dns_labels = {
-    "n01698490-w-vm1" = "n01698490-w-vm1"
+    "n01698490-w-vm1" = "n01697923-w-vm1"
   }
 }
 
