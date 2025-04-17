@@ -74,7 +74,7 @@ module "windows_vms" {
   tags                = local.common_tags 
 
   windows_vms = {
-    "n01698490-w-vm1" = "Standard_B1s"
+    "n01697923-w-vm1" = "Standard_B1s"
   }
 
   windows_avs = "windows-avs"
