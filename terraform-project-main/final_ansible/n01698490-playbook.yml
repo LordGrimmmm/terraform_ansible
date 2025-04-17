@@ -1,0 +1,8 @@
+- name: Configure Linux VMs for CCGC 5502 Automation Project
+  hosts: linux
+  become: true
+  roles:
+    - profile-n01697923
+    - user-n01697923
+    - datadisk-n01697923
+    - webserver-n01697923
